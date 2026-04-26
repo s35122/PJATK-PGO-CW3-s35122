@@ -26,5 +26,25 @@ public class Main {
         System.out.println("k1 == k2: " + k1.equals(k2)); // true (ten sam ID)
         System.out.println("k1 == k3: " + k1.equals(k3)); // false
 
+
+        System.out.println("TEST ZAMÓWIENIA");
+
+        KlientKawiarni klient = new KlientKawiarni(1, "Jan", "Kowalski", "jan@mail.pl");
+
+        Zamowienie z1 = new Zamowienie(klient);
+
+        z1.dodajProdukt(p1);
+        z1.dodajProdukt(p2);
+
+        System.out.println(z1);
+
+        System.out.println("\nWartość: " + z1.policzWartosc());
+        System.out.println("Liczba produktów: " + z1.policzLiczbeProduktow());
+
+        z1.oznaczJakoOplacone();
+
+        System.out.println("\nPo opłaceniu:");
+        System.out.println(z1);
+
     }
 }
