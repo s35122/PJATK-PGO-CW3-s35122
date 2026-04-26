@@ -13,5 +13,18 @@ public class Main {
 
         System.out.println("Liczba produktów: " + ProduktMenu.getLiczbaProduktow());
 
+        System.out.println("TEST KLIENTA");
+
+        KlientKawiarni k1 = new KlientKawiarni(1, "Jan", "Kowalski", "jan@mail.pl");
+        KlientKawiarni k2 = new KlientKawiarni(1, "Jan", "Kopia", "inny@mail.pl");
+        KlientKawiarni k3 = new KlientKawiarni(2, "Anna", "Nowak", "anna@mail.pl");
+
+        System.out.println(k1);
+        System.out.println("Pełne dane: " + k1.getPelneDane());
+
+        System.out.println("Porównania:");
+        System.out.println("k1 == k2: " + k1.equals(k2)); // true (ten sam ID)
+        System.out.println("k1 == k3: " + k1.equals(k3)); // false
+
     }
 }

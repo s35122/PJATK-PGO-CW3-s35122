@@ -18,5 +18,24 @@ Zawiera podstawowe informacje o produkcie, takie jak kod, nazwa, cena oraz kateg
 ## Konstruktor
 Tworzy nowy obiekt produktu i automatycznie zwiększa licznik produktów.
 
-```java
-ProduktMenu(String kod, String nazwa, double cena, String kategoria)
+
+# README – Klasa KlientKawiarni
+
+## Opis
+Klasa `KlientKawiarni` reprezentuje klienta składającego zamówienie w systemie kawiarni.  
+Przechowuje podstawowe dane identyfikacyjne oraz kontaktowe.
+
+---
+
+## Pola
+- `idKlienta` – unikalny identyfikator klienta,
+- `imie` – imię klienta,
+- `nazwisko` – nazwisko klienta,
+- `email` – adres email klienta.
+
+---
+
+## Konstruktor
+Tworzy nowy obiekt klienta.
+
+KlientKawiarni(int idKlienta, String imie, String nazwisko, String email)
